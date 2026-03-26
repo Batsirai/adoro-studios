@@ -1,0 +1,11 @@
+    {
+      "name": "security-audit",
+      "description": "Zo security audit — adapted from VoxYZ hardening checklist",
+      "source": "voxyz.space/security",
+      "source_path": "security-audit",
+      "version": "1.0.0",
+      "last_synced": "2026-03-19",
+      "depends_on": [],
+      "logs_to": "telegram",
+      "status": "installed"
+    }

@@ -1,0 +1,187 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-03-19T18:25:00Z",
+  "sources": {
+    "gstack": {
+      "url": "https://github.com/garrytan/gstack",
+      "stars": "27k+",
+      "skills": [
+        "office-hours",
+        "plan-ceo-review",
+        "plan-eng-review",
+        "review",
+        "qa",
+        "ship",
+        "retro",
+        "investigate",
+        "design-consultation",
+        "document-release"
+      ]
+    },
+    "agency-agents": {
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "stars": "54k+",
+      "skills": [
+        "researcher",
+        "marketer"
+      ]
+    },
+    "voxyz": {
+      "url": "https://voxyz.space/security",
+      "skills": [
+        "security-audit"
+      ]
+    }
+  },
+  "skills": [
+    {
+      "name": "office-hours",
+      "description": "Product strategy reframe",
+      "source": "gstack",
+      "last_synced": "2026-03-19",
+      "status": "installed",
+      "depends_on": [],
+      "trigger": "manual",
+      "danger_level": "low"
+    },
+    {
+      "name": "plan-ceo-review",
+      "description": "Founder-mode strategy audit",
+      "source": "gstack",
+      "last_synced": "2026-03-19",
+      "status": "installed",
+      "depends_on": [],
+      "trigger": "manual",
+      "danger_level": "low"
+    },
+    {
+      "name": "plan-eng-review",
+      "description": "Architecture lock with ASCII diagrams",
+      "source": "gstack",
+      "last_synced": "2026-03-19",
+      "status": "installed",
+      "depends_on": [],
+      "trigger": "manual",
+      "danger_level": "low"
+    },
+    {
+      "name": "review",
+      "description": "PR/review checklist",
+      "source": "gstack",
+      "last_synced": "2026-03-19",
+      "status": "installed",
+      "depends_on": [],
+      "trigger": "manual",
+      "danger_level": "low"
+    },
+    {
+      "name": "qa",
+      "description": "QA agent \u2014 edge cases, chaos testing",
+      "source": "gstack",
+      "last_synced": "2026-03-19",
+      "status": "installed",
+      "depends_on": [],
+      "trigger": "manual",
+      "danger_level": "low"
+    },
+    {
+      "name": "ship",
+      "description": "Ship + test + push + verify",
+      "source": "gstack",
+      "last_synced": "2026-03-19",
+      "status": "installed",
+      "depends_on": [
+        "qa",
+        "review"
+      ],
+      "trigger": "manual",
+      "danger_level": "medium"
+    },
+    {
+      "name": "retro",
+      "description": "Sprint retrospective",
+      "source": "gstack",
+      "last_synced": "2026-03-19",
+      "status": "installed",
+      "depends_on": [],
+      "trigger": "manual",
+      "danger_level": "low"
+    },
+    {
+      "name": "investigate",
+      "description": "Root-cause debugging",
+      "source": "gstack",
+      "last_synced": "2026-03-19",
+      "status": "installed",
+      "depends_on": [],
+      "trigger": "manual",
+      "danger_level": "low"
+    },
+    {
+      "name": "design-consultation",
+      "description": "Design review",
+      "source": "gstack",
+      "last_synced": "2026-03-19",
+      "status": "installed",
+      "depends_on": [],
+      "trigger": "manual",
+      "danger_level": "low"
+    },
+    {
+      "name": "document-release",
+      "description": "Release documentation",
+      "source": "gstack",
+      "last_synced": "2026-03-19",
+      "status": "installed",
+      "depends_on": [
+        "ship"
+      ],
+      "trigger": "manual",
+      "danger_level": "low"
+    },
+    {
+      "name": "security-audit",
+      "description": "Zo security audit \u2014 plaintext secrets, open ports, integration auth",
+      "source": "voxyz",
+      "last_synced": "2026-03-19",
+      "status": "installed",
+      "depends_on": [],
+      "trigger": "manual",
+      "danger_level": "low"
+    },
+    {
+      "name": "researcher",
+      "description": "Web research agent",
+      "source": "agency-agents",
+      "last_synced": "2026-03-19",
+      "status": "installed",
+      "depends_on": [],
+      "trigger": "scheduled",
+      "danger_level": "low"
+    },
+    {
+      "name": "marketer",
+      "description": "Content calendar + social posts",
+      "source": "agency-agents",
+      "last_synced": "2026-03-19",
+      "status": "installed",
+      "depends_on": [
+        "researcher"
+      ],
+      "trigger": "scheduled",
+      "danger_level": "low"
+    },
+    {
+      "name": "zo-tiktok-marketing",
+      "description": "TikTok + Instagram slideshow marketing pipeline. Generate images, add text overlays, post via Upload-Post/Buffer, track analytics, iterate based on data. Adapted from LarryBrain for Zo Computer.",
+      "source": "zo-custom",
+      "last_synced": "2026-03-22",
+      "status": "installed",
+      "depends_on": [
+        "zo-buffer"
+      ],
+      "trigger": "scheduled",
+      "danger_level": "medium"
+    }
+  ]
+}
